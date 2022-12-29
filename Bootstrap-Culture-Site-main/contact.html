@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand p-3" href="./index.html">Culture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tickets</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reading
+              </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success bg-black" type="submit">
+              Search
+            </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact mb-5 mt-5">
+        <div class="row">
+            <div class="col-xl-3" style="height: 500px"></div>
+            <div class="col-xl-6" style="background-color: antiquewhite">
+                <h1 class="mt-3">Lütfen Giriş Yapınız</h1>
+                <form class="needs-validation" novalidate>
+                    <label for="exampleInputEmail1" class="form-label">Ad Soyad</label>
+                    <input maxlength="50" minlength="6" required type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <div class="invalid-feedback">
+                        Lütfen geçerli bir ad soyad giriniz.
+                    </div>
+
+                    <label for="exampleInputEmail1" class="form-label mt-3">Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              required
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div class="invalid-feedback">
+              Lütfen geçerli bir e posta giriniz.
+            </div>
+
+            <label for="exampleInputEmail1" class="form-label mt-3"
+              >Tc Kimlik No</label
+            >
+            <input
+              required
+              type="text"
+              minlength="11"
+              maxlength="11"
+              class="form-control"
+              id="replyNumber"
+              min="0"
+              step="1"
+              aria-describedby="emailHelp"
+            />
+            <div class="invalid-feedback">
+              Lütfen geçerli bir tc no giriniz.
+            </div>
+
+            <label for="disabledSelect" class="form-label mt-3"
+              >Mesleğiniz</label
+            >
+            <select id="disabledSelect" required class="form-select mb-4">
+              <option value="" disabled selected>Meslek Seçiniz</option>
+              <option value="1">Öğretmen</option>
+              <option value="2">Doktor</option>
+              <option value="3">Polis</option>
+              <option value="4">İtfayeci</option>
+              <option value="5">Yazılımcı</option>
+            </select>
+            <div class="invalid-feedback">Lütfen Meslek Seçiniz.</div>
+
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Buraya bir yorum bırak"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Lütfen Mesajınızı Giriniz.</label>
+            </div>
+
+            <input type="datetime-local" class="mt-5 mb-4" required />
+            <div class="invalid-feedback">
+                Lütfen Geçerli bir tarih giriniz.
+            </div>
+
+            <div class="radiobuttons">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required />
+                    <label class="form-check-label" for="validationFormCheck2">Erkek</label
+                >
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="validationFormCheck3"
+                  name="radio-stacked"
+                  required
+                />
+                <label class="form-check-label" for="validationFormCheck3"
+                  >Kadın</label
+                >
+                <div class="invalid-feedback">Lütfen Birini Seçiniz</div>
+              </div>
+            </div>
+
+            <div class="buttons">
+              <button type="submit" class="btn btn-primary me-5 float-end">
+                Login
+              </button>
+              <button
+                type="submit"
+                onclick="Yenile()"
+                class="btn btn-primary float-start"
+              >
+                Clear
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-xl-3" style="height: 500px"></div>
+      </div>
+    </div>
+
+    <div class="footer text-center" style="background-color: #4bc7db">
+      <div class="row">
+        <div class="col-xl-12">
+          <p style="color: #fff">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            voluptas quae facilis eum quo voluptatum iure amet. Velit cupiditate
+            cum amet illo minus? Beatae aspernatur ipsum consequuntur illum
+            aperiam dignissimos.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function Yenile() {
+        location.reload();
+      }
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
