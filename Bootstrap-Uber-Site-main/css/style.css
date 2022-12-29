@@ -1,0 +1,52 @@
+.container-fluid {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.navbar a {
+    color: #959798;
+}
+
+.info_bar a {
+    color: #000;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #424242;
+}
+
+.slider {
+    height: 500px;
+}
+
+.slider img {
+    height: 500px;
+}
+
+.information {
+    height: 100px;
+}
+
+.inner_content .row {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inner_content i {
+    font-size: 50px;
+}
+
+.content .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
